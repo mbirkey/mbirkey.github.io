@@ -95,7 +95,8 @@ function formatTime(date) {
   return date.toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit', hour12: true });
 }
 
-function renderTransactions() {
+window.onload = function() {
+  renderTransactions();
   const transactionsDiv = document.getElementById('transactions');
   transactionsDiv.innerHTML = '';
 
